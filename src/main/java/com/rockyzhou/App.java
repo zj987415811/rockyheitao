@@ -40,6 +40,8 @@ public class App {
     private static JmsService jmsService = new JmsService();
     private static int getCount = 0;
 
+    private static int bossWinCount = 0;
+    private static int bossfailCount = 0;
     public static void main(String[] args) {
 
         while (true) {
@@ -64,7 +66,6 @@ public class App {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-
         }
 
     }
@@ -121,9 +122,10 @@ public class App {
                 String wordStr = word.get("words");
                 strings.add(wordStr);
             }
-            resultParseWin(strings, filePath);
-            resultParseNum(strings);
-            resultParsePease(strings);
+            resultParseBossWin(strings,filePath);
+//            resultParseWin(strings, filePath);
+//            resultParseNum(strings);
+//            resultParsePease(strings);
             getCount++;
             System.out.println("今日调用次数：" + getCount);
         } catch (Exception e) {
@@ -160,6 +162,44 @@ public class App {
         }
     }
 
+    public static void resultParseBossWin(List<String> wordList, String filePath) {
+        List<String> list = wordList;
+        //获取最终下注情况
+        double zhuangkexiafen = Double.parseDouble(list.get(0).substring(4,list.get(0).length()-1));
+        double xiankexiafen = Double.parseDouble(list.get(1).substring(4,list.get(0).length()-1));
+        //获取胜负情况
+        int zhuangdianshu = Integer.parseInt(list.get(3).substring(list.get(3).length()-2,list.get(3).length()-1));
+        int xiandianshu = Integer.parseInt(list.get(4).substring(list.get(3).length()-2,list.get(3).length()-1));
+        System.out.println("庄下注情况："+zhuangkexiafen);
+        System.out.println("闲下注情况："+xiankexiafen);
+        System.out.println("庄点数："+zhuangdianshu+","+"闲点数："+xiandianshu);
+        getWin(zhuangkexiafen,xiankexiafen,zhuangdianshu,xiandianshu);
+    }
+
+
+    public static void getWin(double zhuangkexiafen,double xiankexiafen, int zhuangdianshu, int xiandianshu) {
+        if(zhuangkexiafen > xiankexiafen && zhuangdianshu > xiandianshu) {
+            bossWinCount++;
+            bossfailCount = 0;
+            System.out.println("Boss赢:"+bossWinCount);
+        } else if(zhuangkexiafen > xiankexiafen && zhuangdianshu < xiandianshu ) {
+            bossfailCount++;
+            bossWinCount = 0;
+            System.out.println("Boss输"+bossfailCount);
+        } else if(zhuangkexiafen < xiankexiafen && zhuangdianshu < xiandianshu){
+            bossWinCount++;
+            bossfailCount = 0;
+            System.out.println("Boss赢:"+bossWinCount);
+        } else if(zhuangkexiafen < xiankexiafen && zhuangdianshu >xiandianshu ) {
+            bossfailCount++;
+            bossWinCount = 0;
+            System.out.println("Boss输:"+bossfailCount);
+        } else {
+            bossfailCount++;
+            bossWinCount ++;
+            System.out.println("Boss输和"+bossWinCount+","+bossfailCount);
+        }
+    }
     public static void resultParseWinV2(List<String> wordList, String filePath) throws ClientException {
         for (String s : wordList) {
             if (s.contains("庄赢")) {
