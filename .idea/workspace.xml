@@ -2,11 +2,48 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="821a8194-1153-43a7-bc69-446594a09490" name="Default" comment="">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/rockyzhou/App.java" afterPath="$PROJECT_DIR$/src/main/java/com/rockyzhou/App.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/rockyzhou/JmsService.java" afterPath="$PROJECT_DIR$/src/main/java/com/rockyzhou/JmsService.java" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/rockyzhou/App.class" afterPath="$PROJECT_DIR$/target/classes/com/rockyzhou/App.class" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/rockyzhou/JmsService.class" afterPath="$PROJECT_DIR$/target/classes/com/rockyzhou/JmsService.class" />
+=======
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/rockyzhou/App.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/rockyzhou/AuthService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/rockyzhou/ConvertImageToBase64.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/rockyzhou/FtpUtil.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/rockyzhou/JmsService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/rockyzhou/v2/AuthServiceKeyProduct.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/rockyzhou/v2/ImageCodeComsummer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/rockyzhou/v2/ImageCodeProducer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/rockyzhou/v2/Main.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/rockyzhou/v2/MessageService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/rockyzhou/v2/ResultHandler.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/rockyzhou/v2/TrigeEnum.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/com/rockyzhou/AppTest.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_49.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_49.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_aliyun_aliyun_java_sdk_core_4_0_6.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_aliyun_aliyun_java_sdk_core_4_0_6.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_aliyun_aliyun_java_sdk_dysmsapi_1_1_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_aliyun_aliyun_java_sdk_dysmsapi_1_1_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_xml_bind_jaxb_core_2_1_14.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_xml_bind_jaxb_core_2_1_14.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_xml_bind_jaxb_impl_2_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_xml_bind_jaxb_impl_2_1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_9.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_9.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_net_commons_net_3_6.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_net_commons_net_3_6.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_activation_1_1_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_activation_1_1_1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_stream_stax_api_1_0_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_stream_stax_api_1_0_2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_11.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_11.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_3.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_6.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_6.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_json_json_20160810.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_json_json_20160810.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RockyHeiTao.iml" afterPath="$PROJECT_DIR$/RockyHeiTao.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/rockyzhou/App.java" afterPath="$PROJECT_DIR$/src/main/java/com/rockyzhou/App.java" />
+>>>>>>> 2b564cc535262bcb0701fb7e823dac3eaf8492bc
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,7 +61,11 @@
       <file leaf-file-name="AuthService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/rockyzhou/AuthService.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="119">
+=======
+            <state relative-caret-position="154">
+>>>>>>> 2b564cc535262bcb0701fb7e823dac3eaf8492bc
               <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
               <folding />
             </state>
@@ -34,16 +75,22 @@
       <file leaf-file-name="App.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/rockyzhou/App.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="553">
               <caret line="192" column="47" lean-forward="true" selection-start-line="192" selection-start-column="47" selection-end-line="192" selection-end-column="47" />
+=======
+            <state relative-caret-position="-1483">
+              <caret line="215" column="28" lean-forward="true" selection-start-line="215" selection-start-column="28" selection-end-line="215" selection-end-column="28" />
+>>>>>>> 2b564cc535262bcb0701fb7e823dac3eaf8492bc
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Integer.java" pinned="false" current-in-tab="false">
-        <entry file="jar://E:/Program Files/Java/jdk1.8.0_161/src.zip!/java/lang/Integer.java">
+      <file leaf-file-name="String.java" pinned="false" current-in-tab="false">
+        <entry file="jar://D:/Program Files/Java/jdk1.8.0_131/src.zip!/java/lang/String.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="9877">
               <caret line="614" column="0" lean-forward="false" selection-start-line="614" selection-start-column="0" selection-end-line="614" selection-end-column="0" />
               <folding />
@@ -56,6 +103,10 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="629">
               <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+=======
+            <state relative-caret-position="188">
+              <caret line="1962" column="0" lean-forward="false" selection-start-line="1962" selection-start-column="0" selection-end-line="1962" selection-end-column="0" />
+>>>>>>> 2b564cc535262bcb0701fb7e823dac3eaf8492bc
               <folding />
             </state>
           </provider>
@@ -64,7 +115,7 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/rockyzhou/v2/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
+            <state relative-caret-position="44">
               <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
               <folding />
             </state>
@@ -74,7 +125,7 @@
       <file leaf-file-name="ImageCodeProducer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/rockyzhou/v2/ImageCodeProducer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
+            <state relative-caret-position="44">
               <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
               <folding />
             </state>
@@ -84,7 +135,7 @@
       <file leaf-file-name="ImageCodeComsummer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/rockyzhou/v2/ImageCodeComsummer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
+            <state relative-caret-position="44">
               <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
               <folding />
             </state>
@@ -94,7 +145,7 @@
       <file leaf-file-name="AuthServiceKeyProduct.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/rockyzhou/v2/AuthServiceKeyProduct.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
+            <state relative-caret-position="44">
               <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
               <folding />
             </state>
@@ -104,7 +155,7 @@
       <file leaf-file-name="FtpUtil.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/rockyzhou/FtpUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
+            <state relative-caret-position="528">
               <caret line="31" column="18" lean-forward="false" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -118,8 +169,13 @@
       <file leaf-file-name="JmsService.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/rockyzhou/JmsService.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="553">
               <caret line="120" column="24" lean-forward="true" selection-start-line="120" selection-start-column="24" selection-end-line="120" selection-end-column="24" />
+=======
+            <state relative-caret-position="814">
+              <caret line="46" column="48" lean-forward="true" selection-start-line="46" selection-start-column="48" selection-end-line="46" selection-end-column="48" />
+>>>>>>> 2b564cc535262bcb0701fb7e823dac3eaf8492bc
               <folding />
             </state>
           </provider>
@@ -133,16 +189,6 @@
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
       <projects_view />
-    </option>
-    <option name="projectSyncType">
-      <map>
-        <entry key="F:/Java资料/源码阅读/Spring源码/Spring-framework" value="PREVIEW" />
-        <entry key="F:/Java资料/源码阅读/Spring源码/Spring-framework/gradle" value="PREVIEW" />
-        <entry key="F:/Java资料/源码阅读/Spring源码/Spring-framework1" value="PREVIEW" />
-        <entry key="F:/Java资料/源码阅读/Spring源码/Spring-framework2" value="PREVIEW" />
-        <entry key="F:/Java资料/源码阅读/Spring源码/spring-framework" value="PREVIEW" />
-        <entry key="F:/Java资料/源码阅读/spring-framework" value="PREVIEW" />
-      </map>
     </option>
   </component>
   <component name="IdeDocumentHistory">
@@ -185,11 +231,19 @@
       <select />
     </treeState>
   </component>
+<<<<<<< HEAD
   <component name="ProjectFrameBounds">
     <option name="x" value="812" />
     <option name="y" value="13" />
     <option name="width" value="1099" />
     <option name="height" value="1087" />
+=======
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1432" />
+    <option name="y" value="-8" />
+    <option name="width" value="1296" />
+    <option name="height" value="1040" />
+>>>>>>> 2b564cc535262bcb0701fb7e823dac3eaf8492bc
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -207,8 +261,11 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+<<<<<<< HEAD
       <pane id="Scope" />
       <pane id="Scratches" />
+=======
+>>>>>>> 2b564cc535262bcb0701fb7e823dac3eaf8492bc
       <pane id="AndroidView" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
@@ -216,51 +273,53 @@
           <expand>
             <path>
               <item name="rockyheitao" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RockyHeiTao" type="462c0819:PsiDirectoryNode" />
+              <item name="rockyheitao" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="rockyheitao" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RockyHeiTao" type="462c0819:PsiDirectoryNode" />
+              <item name="rockyheitao" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="rockyheitao" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RockyHeiTao" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rockyheitao" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RockyHeiTao" type="462c0819:PsiDirectoryNode" />
+              <item name="rockyheitao" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="rockyheitao" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RockyHeiTao" type="462c0819:PsiDirectoryNode" />
+              <item name="rockyheitao" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="rockyheitao" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RockyHeiTao" type="462c0819:PsiDirectoryNode" />
+              <item name="rockyheitao" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="rockyzhou" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
+=======
             </path>
             <path>
               <item name="rockyheitao" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RockyHeiTao" type="462c0819:PsiDirectoryNode" />
+              <item name="rockyheitao" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="rockyzhou" type="462c0819:PsiDirectoryNode" />
+              <item name="App" type="1a9f42e2:ClassTreeNode" />
+            </path>
+            <path>
+              <item name="rockyheitao" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rockyheitao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="rockyzhou" type="462c0819:PsiDirectoryNode" />
+>>>>>>> 2b564cc535262bcb0701fb7e823dac3eaf8492bc
               <item name="JmsService" type="1a9f42e2:ClassTreeNode" />
             </path>
             <path>
@@ -283,14 +342,6 @@
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
               <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
               <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rockyheitao" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="lang" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -298,23 +349,19 @@
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
               <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
               <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="lang" type="462c0819:PsiDirectoryNode" />
-              <item name="Integer" type="1a9f42e2:ClassTreeNode" />
-            </path>
-            <path>
-              <item name="rockyheitao" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="lang" type="462c0819:PsiDirectoryNode" />
-              <item name="NumberFormatException" type="1a9f42e2:ClassTreeNode" />
+              <item name="String" type="1a9f42e2:ClassTreeNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+<<<<<<< HEAD
+=======
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+>>>>>>> 2b564cc535262bcb0701fb7e823dac3eaf8492bc
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -338,13 +385,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <module />
-    </configuration>
+  <component name="RunManager" selected="Application.App">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -363,6 +404,12 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="rockyheitao" />
       <envs />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -398,6 +445,12 @@
       <envs />
       <patterns />
     </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
@@ -432,12 +485,6 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
-      <module name="" />
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
-      <option name="PROGRAM_PARAMETERS" />
-      <predefined_log_file id="idea.log" enabled="true" />
-    </configuration>
     <recent_temporary>
       <list size="1">
         <item index="0" class="java.lang.String" itemvalue="Application.App" />
@@ -460,31 +507,57 @@
       <workItem from="1543321832379" duration="452000" />
       <workItem from="1543322947037" duration="5015000" />
       <workItem from="1543386434712" duration="604000" />
+<<<<<<< HEAD
       <workItem from="1543916996782" duration="8396000" />
       <workItem from="1543931733166" duration="1541000" />
       <workItem from="1543935862679" duration="11899000" />
       <workItem from="1543997916754" duration="4269000" />
+=======
+      <workItem from="1543916996782" duration="5614000" />
+      <workItem from="1543925447578" duration="4687000" />
+>>>>>>> 2b564cc535262bcb0701fb7e823dac3eaf8492bc
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="32176000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="812" y="13" width="1099" height="1087" extended-state="0" />
+=======
+    <option name="totallyTimeSpent" value="16372000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1432" y="-8" width="1296" height="1040" extended-state="6" />
+>>>>>>> 2b564cc535262bcb0701fb7e823dac3eaf8492bc
     <layout>
-      <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901832" sideWeight="0.49562362" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901832" sideWeight="0.16849016" order="7" side_tool="true" content_ui="tabs" />
+<<<<<<< HEAD
       <window_info id="JRebel Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3128371" sideWeight="0.19153032" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3282002" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905984" sideWeight="0.4978678" order="7" side_tool="false" content_ui="tabs" />
+=======
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889125" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3284091" sideWeight="0.82577133" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+>>>>>>> 2b564cc535262bcb0701fb7e823dac3eaf8492bc
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16100323" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3985043" sideWeight="0.4978678" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901832" sideWeight="0.49562362" order="8" side_tool="false" content_ui="tabs" />
@@ -497,13 +570,20 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19826756" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+=======
+>>>>>>> 2b564cc535262bcb0701fb7e823dac3eaf8492bc
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3985043" sideWeight="0.4978678" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="JRebel Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32901832" sideWeight="0.17422867" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905984" sideWeight="0.4978678" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -518,7 +598,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/rockyzhou/App.java</url>
-          <line>124</line>
+          <line>129</line>
           <properties />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
@@ -530,6 +610,7 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/com/rockyzhou/AuthService.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="119">
           <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
           <folding />
@@ -682,6 +763,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/rockyzhou/JmsService.java">
       <provider selected="true" editor-type-id="text-editor">
+=======
+>>>>>>> 2b564cc535262bcb0701fb7e823dac3eaf8492bc
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
@@ -690,6 +773,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/rockyzhou/App.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="3485">
           <caret line="217" column="9" lean-forward="true" selection-start-line="217" selection-start-column="9" selection-end-line="217" selection-end-column="9" />
           <folding />
@@ -716,13 +800,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="629">
           <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+=======
+        <state relative-caret-position="4224">
+          <caret line="192" column="60" lean-forward="false" selection-start-line="192" selection-start-column="60" selection-end-line="192" selection-end-column="60" />
+>>>>>>> 2b564cc535262bcb0701fb7e823dac3eaf8492bc
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/rockyzhou/v2/Main.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="34">
+=======
+        <state relative-caret-position="44">
+>>>>>>> 2b564cc535262bcb0701fb7e823dac3eaf8492bc
           <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
           <folding />
         </state>
@@ -730,7 +822,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/rockyzhou/v2/ImageCodeProducer.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="34">
+=======
+        <state relative-caret-position="44">
+>>>>>>> 2b564cc535262bcb0701fb7e823dac3eaf8492bc
           <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
           <folding />
         </state>
@@ -738,7 +834,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/rockyzhou/v2/ImageCodeComsummer.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="34">
+=======
+        <state relative-caret-position="44">
+>>>>>>> 2b564cc535262bcb0701fb7e823dac3eaf8492bc
           <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
           <folding />
         </state>
@@ -746,7 +846,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/rockyzhou/v2/AuthServiceKeyProduct.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="34">
+=======
+        <state relative-caret-position="44">
+>>>>>>> 2b564cc535262bcb0701fb7e823dac3eaf8492bc
           <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
           <folding />
         </state>
@@ -754,7 +858,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/rockyzhou/FtpUtil.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="408">
+=======
+        <state relative-caret-position="528">
+>>>>>>> 2b564cc535262bcb0701fb7e823dac3eaf8492bc
           <caret line="31" column="18" lean-forward="false" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -772,6 +880,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/java/com/rockyzhou/App.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3910">
@@ -780,6 +889,8 @@
         </state>
       </provider>
     </entry>
+=======
+>>>>>>> 2b564cc535262bcb0701fb7e823dac3eaf8492bc
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
@@ -842,7 +953,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/rockyzhou/FtpUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
+        <state relative-caret-position="528">
           <caret line="31" column="18" lean-forward="false" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -854,7 +965,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/rockyzhou/v2/ImageCodeComsummer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
+        <state relative-caret-position="44">
           <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
           <folding />
         </state>
@@ -862,7 +973,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/rockyzhou/v2/ImageCodeProducer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
+        <state relative-caret-position="44">
           <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
           <folding />
         </state>
@@ -870,7 +981,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/rockyzhou/v2/AuthServiceKeyProduct.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
+        <state relative-caret-position="44">
           <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
           <folding />
         </state>
@@ -878,7 +989,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/rockyzhou/v2/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
+        <state relative-caret-position="44">
           <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
           <folding />
         </state>
@@ -886,30 +997,47 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/rockyzhou/AuthService.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="119">
+=======
+        <state relative-caret-position="154">
+>>>>>>> 2b564cc535262bcb0701fb7e823dac3eaf8492bc
           <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://E:/Program Files/Java/jdk1.8.0_161/src.zip!/java/lang/NumberFormatException.java">
+    <entry file="jar://E:/Program Files/Java/jdk1.8.0_161/src.zip!/java/lang/NumberFormatException.java" />
+    <entry file="jar://E:/Program Files/Java/jdk1.8.0_161/src.zip!/java/lang/Integer.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rockyzhou/JmsService.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="629">
           <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+=======
+        <state relative-caret-position="814">
+          <caret line="46" column="48" lean-forward="true" selection-start-line="46" selection-start-column="48" selection-end-line="46" selection-end-column="48" />
+>>>>>>> 2b564cc535262bcb0701fb7e823dac3eaf8492bc
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://E:/Program Files/Java/jdk1.8.0_161/src.zip!/java/lang/Integer.java">
+    <entry file="jar://D:/Program Files/Java/jdk1.8.0_131/src.zip!/java/lang/String.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="9877">
           <caret line="614" column="0" lean-forward="false" selection-start-line="614" selection-start-column="0" selection-end-line="614" selection-end-column="0" />
+=======
+        <state relative-caret-position="188">
+          <caret line="1962" column="0" lean-forward="false" selection-start-line="1962" selection-start-column="0" selection-end-line="1962" selection-end-column="0" />
+>>>>>>> 2b564cc535262bcb0701fb7e823dac3eaf8492bc
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/rockyzhou/App.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="553">
           <caret line="192" column="47" lean-forward="true" selection-start-line="192" selection-start-column="47" selection-end-line="192" selection-end-column="47" />
           <folding />
@@ -920,6 +1048,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="553">
           <caret line="120" column="24" lean-forward="true" selection-start-line="120" selection-start-column="24" selection-end-line="120" selection-end-column="24" />
+=======
+        <state relative-caret-position="-1483">
+          <caret line="215" column="28" lean-forward="true" selection-start-line="215" selection-start-column="28" selection-end-line="215" selection-end-column="28" />
+>>>>>>> 2b564cc535262bcb0701fb7e823dac3eaf8492bc
           <folding />
         </state>
       </provider>
