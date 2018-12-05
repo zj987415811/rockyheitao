@@ -168,8 +168,19 @@ public class App {
         double zhuangkexiafen = Double.parseDouble(list.get(0).substring(4, list.get(0).length()));
         double xiankexiafen = Double.parseDouble(list.get(1).substring(4, list.get(1).length()));
         //获取胜负情况
-        int zhuangdianshu = Integer.parseInt(list.get(3).substring(list.get(3).length() - 1, list.get(3).length()));
-        int xiandianshu = Integer.parseInt(list.get(4).substring(list.get(4).length() - 1, list.get(4).length()));
+        int zhuangdianshu = 0;
+        int xiandianshu = 0;
+        if(list.size() ==5) {
+            zhuangdianshu = Integer.parseInt(list.get(3).substring(list.get(3).length() - 1, list.get(3).length()));
+            xiandianshu = Integer.parseInt(list.get(4).substring(list.get(4).length() - 1, list.get(4).length()));
+        } else if(list.size() == 6 && !"庄闲".equals(list.get(3))) {
+            zhuangdianshu = Integer.parseInt(list.get(3).substring(list.get(3).length() - 1, list.get(3).length()));
+            xiandianshu = Integer.parseInt(list.get(5).substring(list.get(5).length() - 1, list.get(5).length()));
+        } else if(list.size() == 6 && "庄闲".equals(list.get(3))) {
+            zhuangdianshu = Integer.parseInt(list.get(4).substring(list.get(4).length() - 1, list.get(4).length()));
+            xiandianshu = Integer.parseInt(list.get(5).substring(list.get(5).length() - 1, list.get(5).length()));
+
+        }
         System.out.println(filePath);
         System.out.println("庄下注情况：" + zhuangkexiafen);
         System.out.println("闲下注情况：" + xiankexiafen);
@@ -200,10 +211,10 @@ public class App {
             bossWinCount++;
             System.out.println("Boss输和" + bossWinCount + "," + bossfailCount);
         }
-        if (bossWinCount >= bossTrigeWinOrFailCount && bossWinCount % 4 == 0) {
+        if (bossWinCount >= bossTrigeWinOrFailCount && bossWinCount % 5 == 0) {
             String result = bossWinCount + "点数为：" + zhuangdianshu + "," + xiandianshu;
             jmsService.jmsServiceBossWin(result);
-        } else if (bossfailCount >= bossTrigeWinOrFailCount && bossfailCount % 4 == 0) {
+        } else if (bossfailCount >= bossTrigeWinOrFailCount && bossfailCount % 5 == 0) {
             String result = bossfailCount + "点数为：" + zhuangdianshu + "," + xiandianshu;
             jmsService.jmsServiceBossFail(result);
         }
