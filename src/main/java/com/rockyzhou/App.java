@@ -39,9 +39,10 @@ public class App {
 
     private static JmsService jmsService = new JmsService();
     private static int getCount = 0;
-
+    private static int bossTrigeWinOrFailCount = 4;
     private static int bossWinCount = 0;
     private static int bossfailCount = 0;
+
     public static void main(String[] args) {
 
         while (true) {
@@ -57,14 +58,12 @@ public class App {
                     File file111 = new File("F:\\work\\imageSave\\" + listFiles[0].getName());
                     copyFile(listFiles[0], file111);
                     listFiles[0].delete();
-                    Thread.sleep(25000);
+                    //Thread.sleep(25000);
                 }
 
             } catch (IOException e) {
                 System.out.println("Exception");
                 continue;
-            } catch (InterruptedException e) {
-                e.printStackTrace();
             }
         }
 
@@ -100,14 +99,15 @@ public class App {
             //String filePath = "G:\\image\\Screenshot-000"+num+".jpg";
             String imageEncodeStr = ConvertImageToBase64.getImageStr(filePath);
             String keyWord = URLEncoder.encode(imageEncodeStr, "GBK");
-            String keyurl = "24.4f34ec42da5ad64c43aaad498e8dc015.2592000.1545909502.282335-14961594";
-            if(getCount < 490 && !keyurl.equals(ypkey)) {
-                keyurl = ypkey;
-            } else if(getCount > 491 && getCount < 991 && !keyurl.equals(bbKey)) {
-                keyurl = bbKey;
-            } else if(getCount > 991 && getCount < 1491 && !keyurl.equals(mykey)) {
-                keyurl = mykey;
-            }
+            String keyurl = "24.786f8c8b8452108eccc2d3fa32da37c4.2592000.1545382893.282335-14894979";
+//            if(getCount < 490 && !keyurl.equals(ypkey)) {
+//                keyurl = ypkey;
+//            } else if(getCount > 491 && getCount < 991 && !keyurl.equals(bbKey)) {
+//                keyurl = bbKey;
+//            } else if(getCount > 991 && getCount < 1491 && !keyurl.equals(mykey)) {
+//                keyurl = mykey;
+//            }
+
             String url = "https://aip.baidubce.com/rest/2.0/ocr/v1/accurate_basic?access_token=" + keyurl;
             String param = "image=" + keyWord;
             String resultStr = sendPost(url, param);
@@ -122,7 +122,7 @@ public class App {
                 String wordStr = word.get("words");
                 strings.add(wordStr);
             }
-            resultParseBossWin(strings,filePath);
+            resultParseBossWin(strings, filePath);
 //            resultParseWin(strings, filePath);
 //            resultParseNum(strings);
 //            resultParsePease(strings);
@@ -162,44 +162,53 @@ public class App {
         }
     }
 
-    public static void resultParseBossWin(List<String> wordList, String filePath) {
+    public static void resultParseBossWin(List<String> wordList, String filePath) throws ClientException {
         List<String> list = wordList;
         //获取最终下注情况
-        double zhuangkexiafen = Double.parseDouble(list.get(0).substring(4,list.get(0).length()-1));
-        double xiankexiafen = Double.parseDouble(list.get(1).substring(4,list.get(0).length()-1));
+        double zhuangkexiafen = Double.parseDouble(list.get(0).substring(4, list.get(0).length()));
+        double xiankexiafen = Double.parseDouble(list.get(1).substring(4, list.get(1).length()));
         //获取胜负情况
-        int zhuangdianshu = Integer.parseInt(list.get(3).substring(list.get(3).length()-2,list.get(3).length()-1));
-        int xiandianshu = Integer.parseInt(list.get(4).substring(list.get(3).length()-2,list.get(3).length()-1));
-        System.out.println("庄下注情况："+zhuangkexiafen);
-        System.out.println("闲下注情况："+xiankexiafen);
-        System.out.println("庄点数："+zhuangdianshu+","+"闲点数："+xiandianshu);
-        getWin(zhuangkexiafen,xiankexiafen,zhuangdianshu,xiandianshu);
+        int zhuangdianshu = Integer.parseInt(list.get(3).substring(list.get(3).length() - 1, list.get(3).length()));
+        int xiandianshu = Integer.parseInt(list.get(4).substring(list.get(4).length() - 1, list.get(4).length()));
+        System.out.println(filePath);
+        System.out.println("庄下注情况：" + zhuangkexiafen);
+        System.out.println("闲下注情况：" + xiankexiafen);
+        System.out.println("庄点数：" + zhuangdianshu + "," + "闲点数：" + xiandianshu);
+        getWin(zhuangkexiafen, xiankexiafen, zhuangdianshu, xiandianshu);
     }
 
 
-    public static void getWin(double zhuangkexiafen,double xiankexiafen, int zhuangdianshu, int xiandianshu) {
-        if(zhuangkexiafen > xiankexiafen && zhuangdianshu > xiandianshu) {
+    public static void getWin(double zhuangkexiafen, double xiankexiafen, int zhuangdianshu, int xiandianshu) throws ClientException {
+        if (zhuangkexiafen > xiankexiafen && zhuangdianshu > xiandianshu) {
             bossWinCount++;
             bossfailCount = 0;
-            System.out.println("Boss赢:"+bossWinCount);
-        } else if(zhuangkexiafen > xiankexiafen && zhuangdianshu < xiandianshu ) {
+            System.out.println("Boss赢:" + bossWinCount);
+        } else if (zhuangkexiafen > xiankexiafen && zhuangdianshu < xiandianshu) {
             bossfailCount++;
             bossWinCount = 0;
-            System.out.println("Boss输"+bossfailCount);
-        } else if(zhuangkexiafen < xiankexiafen && zhuangdianshu < xiandianshu){
+            System.out.println("Boss输" + bossfailCount);
+        } else if (zhuangkexiafen < xiankexiafen && zhuangdianshu < xiandianshu) {
             bossWinCount++;
             bossfailCount = 0;
-            System.out.println("Boss赢:"+bossWinCount);
-        } else if(zhuangkexiafen < xiankexiafen && zhuangdianshu >xiandianshu ) {
+            System.out.println("Boss赢:" + bossWinCount);
+        } else if (zhuangkexiafen < xiankexiafen && zhuangdianshu > xiandianshu) {
             bossfailCount++;
             bossWinCount = 0;
-            System.out.println("Boss输:"+bossfailCount);
+            System.out.println("Boss输:" + bossfailCount);
         } else {
             bossfailCount++;
-            bossWinCount ++;
-            System.out.println("Boss输和"+bossWinCount+","+bossfailCount);
+            bossWinCount++;
+            System.out.println("Boss输和" + bossWinCount + "," + bossfailCount);
+        }
+        if (bossWinCount >= bossTrigeWinOrFailCount && bossWinCount % 4 == 0) {
+            String result = bossWinCount + "点数为：" + zhuangdianshu + "," + xiandianshu;
+            jmsService.jmsServiceBossWin(result);
+        } else if (bossfailCount >= bossTrigeWinOrFailCount && bossfailCount % 4 == 0) {
+            String result = bossfailCount + "点数为：" + zhuangdianshu + "," + xiandianshu;
+            jmsService.jmsServiceBossFail(result);
         }
     }
+
     public static void resultParseWinV2(List<String> wordList, String filePath) throws ClientException {
         for (String s : wordList) {
             if (s.contains("庄赢")) {
@@ -262,7 +271,7 @@ public class App {
                     zhuangNotTianWangCount = 0;
                 } else {
                     xianNotTianWangCount++;
-                    zhuangNotTianWangCount ++;
+                    zhuangNotTianWangCount++;
                 }
 
                 if (zhuangNotTianWangCount >= tianwangtrigeCount && zhuangNotTianWangCount % 7 == 0) {
@@ -287,7 +296,7 @@ public class App {
                     zhuangNotTianWangCount = 0;
                 } else {
                     xianNotTianWangCount++;
-                    zhuangNotTianWangCount ++;
+                    zhuangNotTianWangCount++;
                 }
             }
         } else {
