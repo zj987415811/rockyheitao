@@ -2,16 +2,14 @@ package com.rockyzhou;
 
 import com.alibaba.fastjson.JSON;
 import com.aliyuncs.exceptions.ClientException;
+import com.sun.jmx.remote.internal.ArrayQueue;
 import org.json.JSONObject;
 
 import java.io.*;
 import java.net.URL;
 import java.net.URLConnection;
 import java.net.URLEncoder;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -37,20 +35,13 @@ public class App {
     private static String mykey = "24.786f8c8b8452108eccc2d3fa32da37c4.2592000.1545382893.282335-14894979";
     private static String bbKey = "24.8996fe59be0f5a79e390f1a5d202735c.2592000.1545573307.282335-14926692";
     private static String ypkey = "24.4f34ec42da5ad64c43aaad498e8dc015.2592000.1545909502.282335-14961594";
-    private static int bossWinOrFailTrige = 5;
+
     private static JmsService jmsService = new JmsService();
     private static int getCount = 0;
-    private static int bossTrigeWinOrFailCount = 4;
+    private static int bossTrigeWinOrFailCount = 5;
     private static int bossWinCount = 0;
     private static int bossfailCount = 0;
-<<<<<<< HEAD
-
-=======
-    private static int currentBossNum = 0;
-    private static Map<Integer, String> bossWinOrFailMap = new HashMap<>();
-    private static double lastZhuangdianshu = 0.0;
-    private static double lastXianDianShu = 0.0;
->>>>>>> 2b564cc535262bcb0701fb7e823dac3eaf8492bc
+    private static Deque<String> ErShiBaWen = new ArrayDeque<>();
     public static void main(String[] args) {
 
         while (true) {
@@ -66,11 +57,7 @@ public class App {
                     File file111 = new File("F:\\work\\imageSave\\" + listFiles[0].getName());
                     copyFile(listFiles[0], file111);
                     listFiles[0].delete();
-<<<<<<< HEAD
                     //Thread.sleep(25000);
-=======
-                    Thread.sleep(5000);
->>>>>>> 2b564cc535262bcb0701fb7e823dac3eaf8492bc
                 }
 
             } catch (IOException e) {
@@ -111,7 +98,7 @@ public class App {
             //String filePath = "G:\\image\\Screenshot-000"+num+".jpg";
             String imageEncodeStr = ConvertImageToBase64.getImageStr(filePath);
             String keyWord = URLEncoder.encode(imageEncodeStr, "GBK");
-            String keyurl = "24.786f8c8b8452108eccc2d3fa32da37c4.2592000.1545382893.282335-14894979";
+            String keyurl = "24.8996fe59be0f5a79e390f1a5d202735c.2592000.1545573307.282335-14926692";
 //            if(getCount < 490 && !keyurl.equals(ypkey)) {
 //                keyurl = ypkey;
 //            } else if(getCount > 491 && getCount < 991 && !keyurl.equals(bbKey)) {
@@ -177,7 +164,6 @@ public class App {
     public static void resultParseBossWin(List<String> wordList, String filePath) throws ClientException {
         List<String> list = wordList;
         //获取最终下注情况
-<<<<<<< HEAD
         double zhuangkexiafen = Double.parseDouble(list.get(0).substring(4, list.get(0).length()));
         double xiankexiafen = Double.parseDouble(list.get(1).substring(4, list.get(1).length()));
         //获取胜负情况
@@ -196,90 +182,79 @@ public class App {
             bossWinCount++;
             bossfailCount = 0;
             System.out.println("Boss赢:" + bossWinCount);
+            if(ErShiBaWen.size() == 20) {
+                ErShiBaWen.pop();
+                ErShiBaWen.add("赢");
+            } else {
+                ErShiBaWen.add("赢");
+            }
+
         } else if (zhuangkexiafen > xiankexiafen && zhuangdianshu < xiandianshu) {
             bossfailCount++;
             bossWinCount = 0;
             System.out.println("Boss输" + bossfailCount);
+            if(ErShiBaWen.size() == 20) {
+                ErShiBaWen.pop();
+                ErShiBaWen.add("输");
+            } else {
+                ErShiBaWen.add("输");
+            }
+
         } else if (zhuangkexiafen < xiankexiafen && zhuangdianshu < xiandianshu) {
             bossWinCount++;
             bossfailCount = 0;
             System.out.println("Boss赢:" + bossWinCount);
+            if(ErShiBaWen.size() == 20) {
+                ErShiBaWen.pop();
+                ErShiBaWen.add("赢");
+            } else {
+                ErShiBaWen.add("赢");
+            }
         } else if (zhuangkexiafen < xiankexiafen && zhuangdianshu > xiandianshu) {
             bossfailCount++;
             bossWinCount = 0;
             System.out.println("Boss输:" + bossfailCount);
+            if(ErShiBaWen.size() == 20) {
+                ErShiBaWen.pop();
+                ErShiBaWen.add("输");
+                //ErShiBaWen.add("赢");
+            } else {
+                ErShiBaWen.add("输");
+            }
         } else {
             bossfailCount++;
             bossWinCount++;
             System.out.println("Boss输和" + bossWinCount + "," + bossfailCount);
+            if(ErShiBaWen.size() == 20) {
+                ErShiBaWen.pop();
+                ErShiBaWen.add("和");
+                //ErShiBaWen.add("赢");
+            } else {
+                ErShiBaWen.add("和");
+            }
         }
-        if (bossWinCount >= bossTrigeWinOrFailCount && bossWinCount % 4 == 0) {
+        if (bossWinCount >= bossTrigeWinOrFailCount && bossWinCount % 5 == 0) {
             String result = bossWinCount + "点数为：" + zhuangdianshu + "," + xiandianshu;
             jmsService.jmsServiceBossWin(result);
-        } else if (bossfailCount >= bossTrigeWinOrFailCount && bossfailCount % 4 == 0) {
+        } else if (bossfailCount >= bossTrigeWinOrFailCount && bossfailCount % 5 == 0) {
             String result = bossfailCount + "点数为：" + zhuangdianshu + "," + xiandianshu;
             jmsService.jmsServiceBossFail(result);
-=======
-        double zhuangkexiafen = Double.parseDouble(list.get(0).substring(4,list.get(0).length()));
-        double xiankexiafen = Double.parseDouble(list.get(1).substring(4,list.get(1).length()));
-        //获取胜负情况
-        int zhuangdianshu = Integer.parseInt(list.get(3).substring(list.get(3).length()-1,list.get(3).length()));
-        int xiandianshu = Integer.parseInt(list.get(4).substring(list.get(4).length()-1,list.get(4).length()));
-        System.out.println(filePath);
-        System.out.println("庄下注情况："+zhuangkexiafen);
-        System.out.println("闲下注情况："+xiankexiafen);
-        System.out.println("庄点数："+zhuangdianshu+","+"闲点数："+xiandianshu);
-        getWin(zhuangkexiafen,xiankexiafen,zhuangdianshu,xiandianshu);
-        lastZhuangdianshu = zhuangkexiafen;
-        lastXianDianShu = xiankexiafen;
-    }
-
-
-
-    public static void getWin(double zhuangkexiafen,double xiankexiafen, int zhuangdianshu, int xiandianshu) throws ClientException {
-
-        if(zhuangkexiafen > xiankexiafen && zhuangdianshu > xiandianshu) {
-            bossWinCount++;
-            bossfailCount = 0;
-            System.out.println("Boss赢:"+bossWinCount);
-            if (bossWinCount >= bossWinOrFailTrige && bossWinOrFailTrige % 5 == 0) {
-                jmsService.jmsServiceWin(bossWinCount);
-            }
-
-        } else if(zhuangkexiafen > xiankexiafen && zhuangdianshu < xiandianshu ) {
-            bossfailCount++;
-            bossWinCount = 0;
-            System.out.println("Boss输"+bossfailCount);
-            if (bossfailCount >= bossWinOrFailTrige && bossWinOrFailTrige % 5 == 0) {
-                jmsService.jmsServiceWin(bossWinCount);
-            }
-
-        } else if(zhuangkexiafen < xiankexiafen && zhuangdianshu < xiandianshu){
-            bossWinCount++;
-            bossfailCount = 0;
-            System.out.println("Boss赢:"+bossWinCount);
-            if (bossfailCount >= bossWinOrFailTrige && bossWinOrFailTrige % 5 == 0) {
-                jmsService.jmsServiceWin(bossWinCount);
-            }
-
-        } else if(zhuangkexiafen < xiankexiafen && zhuangdianshu >xiandianshu ) {
-            bossfailCount++;
-            bossWinCount = 0;
-            System.out.println("Boss输:"+bossfailCount);
-            if (bossfailCount >= bossWinOrFailTrige && bossWinOrFailTrige % 5 == 0) {
-                jmsService.jmsServiceWin(bossWinCount);
-            }
-
-        } else {
-            bossfailCount++;
-            bossWinCount ++;
-            System.out.println("Boss输和"+bossWinCount+","+bossfailCount);
-            if (bossfailCount >= bossWinOrFailTrige && bossWinOrFailTrige % 5 == 0) {
-                jmsService.jmsServiceWin(bossWinCount);
-            }
-
->>>>>>> 2b564cc535262bcb0701fb7e823dac3eaf8492bc
         }
+        int winCount =0;
+        int failCount = 0;
+        int heCount = 0;
+        for (String s: ErShiBaWen) {
+            if("赢".equals(s)) {
+                winCount++;
+            }else if("输".equals(s)) {
+                failCount++;
+            } else {
+                heCount++;
+            }
+        }
+        System.out.println("近20把情况："+ErShiBaWen.toString());
+        System.out.println("赢："+winCount+",输："+failCount);
+        System.out.println("赢的概率："+(winCount*1.0/20)+","+"输的概率："+(failCount*1.0)/20+ ",和的概率："+(heCount*1.0)/20);
     }
 
     public static void resultParseWinV2(List<String> wordList, String filePath) throws ClientException {
