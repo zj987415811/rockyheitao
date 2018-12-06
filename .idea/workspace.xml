@@ -3,19 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="22ba21b4-e106-480b-a9bd-dfbd5773cfcc" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rockyzhou/App.java" afterPath="$PROJECT_DIR$/src/main/java/com/rockyzhou/App.java" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/rockyzhou/App.class" afterPath="$PROJECT_DIR$/target/classes/com/rockyzhou/App.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/rockyzhou/AuthService.class" afterPath="$PROJECT_DIR$/target/classes/com/rockyzhou/AuthService.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/rockyzhou/ConvertImageToBase64.class" afterPath="$PROJECT_DIR$/target/classes/com/rockyzhou/ConvertImageToBase64.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/rockyzhou/FtpUtil.class" afterPath="$PROJECT_DIR$/target/classes/com/rockyzhou/FtpUtil.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/rockyzhou/v2/AuthServiceKeyProduct.class" afterPath="$PROJECT_DIR$/target/classes/com/rockyzhou/v2/AuthServiceKeyProduct.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/rockyzhou/v2/ImageCodeComsummer.class" afterPath="$PROJECT_DIR$/target/classes/com/rockyzhou/v2/ImageCodeComsummer.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/rockyzhou/v2/ImageCodeProducer.class" afterPath="$PROJECT_DIR$/target/classes/com/rockyzhou/v2/ImageCodeProducer.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/rockyzhou/v2/Main.class" afterPath="$PROJECT_DIR$/target/classes/com/rockyzhou/v2/Main.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/rockyzhou/v2/MessageService.class" afterPath="$PROJECT_DIR$/target/classes/com/rockyzhou/v2/MessageService.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/rockyzhou/v2/ResultHandler.class" afterPath="$PROJECT_DIR$/target/classes/com/rockyzhou/v2/ResultHandler.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/rockyzhou/v2/TrigeEnum.class" afterPath="$PROJECT_DIR$/target/classes/com/rockyzhou/v2/TrigeEnum.class" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/rockyzhou/AppTest.class" afterPath="$PROJECT_DIR$/target/test-classes/com/rockyzhou/AppTest.class" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -43,8 +30,8 @@
       <file leaf-file-name="App.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/rockyzhou/App.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="206" column="0" lean-forward="false" selection-start-line="206" selection-start-column="0" selection-end-line="227" selection-end-column="0" />
+            <state relative-caret-position="68">
+              <caret line="199" column="31" lean-forward="false" selection-start-line="199" selection-start-column="31" selection-end-line="208" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -317,7 +304,7 @@
       <workItem from="1544007434973" duration="77000" />
       <workItem from="1544007662183" duration="329000" />
       <workItem from="1544009512601" duration="11264000" />
-      <workItem from="1544072310436" duration="535000" />
+      <workItem from="1544072310436" duration="778000" />
     </task>
     <task id="LOCAL-00001" summary="第三次提交">
       <created>1544007984558</created>
@@ -333,11 +320,18 @@
       <option name="project" value="LOCAL" />
       <updated>1544009593693</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="添加20局情况统计，优化队列数据结构">
+      <created>1544072880112</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1544072880112</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12205000" />
+    <option name="totallyTimeSpent" value="12448000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
@@ -345,7 +339,7 @@
     <layout>
       <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32905984" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="JRebel Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3322546" sideWeight="0.5033686" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5957652" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901832" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -395,7 +389,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="第三次提交" />
-    <option name="LAST_COMMIT_MESSAGE" value="第三次提交" />
+    <MESSAGE value="添加20局情况统计，优化队列数据结构" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加20局情况统计，优化队列数据结构" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -466,8 +461,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/rockyzhou/App.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="206" column="0" lean-forward="false" selection-start-line="206" selection-start-column="0" selection-end-line="227" selection-end-column="0" />
+        <state relative-caret-position="68">
+          <caret line="199" column="31" lean-forward="false" selection-start-line="199" selection-start-column="31" selection-end-line="208" selection-end-column="33" />
           <folding />
         </state>
       </provider>
