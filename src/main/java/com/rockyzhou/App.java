@@ -2,15 +2,14 @@ package com.rockyzhou;
 
 import com.alibaba.fastjson.JSON;
 import com.aliyuncs.exceptions.ClientException;
+import com.sun.jmx.remote.internal.ArrayQueue;
 import org.json.JSONObject;
 
 import java.io.*;
 import java.net.URL;
 import java.net.URLConnection;
 import java.net.URLEncoder;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -39,10 +38,10 @@ public class App {
 
     private static JmsService jmsService = new JmsService();
     private static int getCount = 0;
-    private static int bossTrigeWinOrFailCount = 4;
+    private static int bossTrigeWinOrFailCount = 5;
     private static int bossWinCount = 0;
     private static int bossfailCount = 0;
-
+    private static Deque<String> ErShiBaWen = new ArrayDeque<>();
     public static void main(String[] args) {
 
         while (true) {
@@ -99,7 +98,7 @@ public class App {
             //String filePath = "G:\\image\\Screenshot-000"+num+".jpg";
             String imageEncodeStr = ConvertImageToBase64.getImageStr(filePath);
             String keyWord = URLEncoder.encode(imageEncodeStr, "GBK");
-            String keyurl = "24.786f8c8b8452108eccc2d3fa32da37c4.2592000.1545382893.282335-14894979";
+            String keyurl = "24.8996fe59be0f5a79e390f1a5d202735c.2592000.1545573307.282335-14926692";
 //            if(getCount < 490 && !keyurl.equals(ypkey)) {
 //                keyurl = ypkey;
 //            } else if(getCount > 491 && getCount < 991 && !keyurl.equals(bbKey)) {
@@ -168,19 +167,8 @@ public class App {
         double zhuangkexiafen = Double.parseDouble(list.get(0).substring(4, list.get(0).length()));
         double xiankexiafen = Double.parseDouble(list.get(1).substring(4, list.get(1).length()));
         //获取胜负情况
-        int zhuangdianshu = 0;
-        int xiandianshu = 0;
-        if(list.size() ==5) {
-            zhuangdianshu = Integer.parseInt(list.get(3).substring(list.get(3).length() - 1, list.get(3).length()));
-            xiandianshu = Integer.parseInt(list.get(4).substring(list.get(4).length() - 1, list.get(4).length()));
-        } else if(list.size() == 6 && !"庄闲".equals(list.get(3))) {
-            zhuangdianshu = Integer.parseInt(list.get(3).substring(list.get(3).length() - 1, list.get(3).length()));
-            xiandianshu = Integer.parseInt(list.get(5).substring(list.get(5).length() - 1, list.get(5).length()));
-        } else if(list.size() == 6 && "庄闲".equals(list.get(3))) {
-            zhuangdianshu = Integer.parseInt(list.get(4).substring(list.get(4).length() - 1, list.get(4).length()));
-            xiandianshu = Integer.parseInt(list.get(5).substring(list.get(5).length() - 1, list.get(5).length()));
-
-        }
+        int zhuangdianshu = Integer.parseInt(list.get(3).substring(list.get(3).length() - 1, list.get(3).length()));
+        int xiandianshu = Integer.parseInt(list.get(4).substring(list.get(4).length() - 1, list.get(4).length()));
         System.out.println(filePath);
         System.out.println("庄下注情况：" + zhuangkexiafen);
         System.out.println("闲下注情况：" + xiankexiafen);
@@ -194,22 +182,56 @@ public class App {
             bossWinCount++;
             bossfailCount = 0;
             System.out.println("Boss赢:" + bossWinCount);
+            if(ErShiBaWen.size() == 20) {
+                ErShiBaWen.pop();
+                ErShiBaWen.add("赢");
+            } else {
+                ErShiBaWen.add("赢");
+            }
+
         } else if (zhuangkexiafen > xiankexiafen && zhuangdianshu < xiandianshu) {
             bossfailCount++;
             bossWinCount = 0;
             System.out.println("Boss输" + bossfailCount);
+            if(ErShiBaWen.size() == 20) {
+                ErShiBaWen.pop();
+                ErShiBaWen.add("输");
+            } else {
+                ErShiBaWen.add("输");
+            }
+
         } else if (zhuangkexiafen < xiankexiafen && zhuangdianshu < xiandianshu) {
             bossWinCount++;
             bossfailCount = 0;
             System.out.println("Boss赢:" + bossWinCount);
+            if(ErShiBaWen.size() == 20) {
+                ErShiBaWen.pop();
+                ErShiBaWen.add("赢");
+            } else {
+                ErShiBaWen.add("赢");
+            }
         } else if (zhuangkexiafen < xiankexiafen && zhuangdianshu > xiandianshu) {
             bossfailCount++;
             bossWinCount = 0;
             System.out.println("Boss输:" + bossfailCount);
+            if(ErShiBaWen.size() == 20) {
+                ErShiBaWen.pop();
+                ErShiBaWen.add("输");
+                //ErShiBaWen.add("赢");
+            } else {
+                ErShiBaWen.add("输");
+            }
         } else {
             bossfailCount++;
             bossWinCount++;
             System.out.println("Boss输和" + bossWinCount + "," + bossfailCount);
+            if(ErShiBaWen.size() == 20) {
+                ErShiBaWen.pop();
+                ErShiBaWen.add("和");
+                //ErShiBaWen.add("赢");
+            } else {
+                ErShiBaWen.add("和");
+            }
         }
         if (bossWinCount >= bossTrigeWinOrFailCount && bossWinCount % 5 == 0) {
             String result = bossWinCount + "点数为：" + zhuangdianshu + "," + xiandianshu;
@@ -218,6 +240,21 @@ public class App {
             String result = bossfailCount + "点数为：" + zhuangdianshu + "," + xiandianshu;
             jmsService.jmsServiceBossFail(result);
         }
+        int winCount =0;
+        int failCount = 0;
+        int heCount = 0;
+        for (String s: ErShiBaWen) {
+            if("赢".equals(s)) {
+                winCount++;
+            }else if("输".equals(s)) {
+                failCount++;
+            } else {
+                heCount++;
+            }
+        }
+        System.out.println("近20把情况："+ErShiBaWen.toString());
+        System.out.println("赢："+winCount+",输："+failCount);
+        System.out.println("赢的概率："+(winCount*1.0/20)+","+"输的概率："+(failCount*1.0)/20+ ",和的概率："+(heCount*1.0)/20);
     }
 
     public static void resultParseWinV2(List<String> wordList, String filePath) throws ClientException {
