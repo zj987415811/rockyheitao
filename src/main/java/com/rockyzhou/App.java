@@ -265,7 +265,7 @@ public class App {
                 heCount++;
             }
         }
-        System.out.println("近20把情况：");
+        System.out.println("近"+queueCapacity+"把情况：");
         Stack<String> stack = new Stack<>();
         for (String s : ErShiBaWen) {
 
